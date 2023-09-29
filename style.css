@@ -9,7 +9,7 @@
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --highlight-color: rgba(255, 255 , 255, 0.1);
+  --highlight-color: rgba(255, 255, 255, 0.123);
   --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to right, #154ea3, #ec3c4c);
+    background-color: black;
     padding: 0 !important;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .nav-item a:hover {
 
-      background:   #154ea3;
+      background: var(--highlight-color);
       border-radius: 50%;
       transition: background 1.0s;
       padding: auto;
@@ -62,18 +62,32 @@ body {
 }
 
 /* BANNER SECTION */
+#banner .btn-primary {
+
+    text-decoration: none;
+    margin-top: 15px;
+    box-shadow: none;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    background-image: linear-gradient(to right, #ec3c4b71, #ec3c4c);
+}
+
 #banner {
-    background-image: linear-gradient(to right,  #154ea3, #ec3c4c);
+
+    background-color: black;
     color: #ffffff;
     padding-top: 5%;
 }
 
 .promo-title {
-
-    font-size: 50px;
+    
+    color: #ec3c4c;
+    font-size: 35px;
     font-weight: 600;
     margin-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 
 
@@ -81,10 +95,16 @@ body {
     width: 100%;
 }
 
+.img-fluid{
+    padding: 100px;
+}
+
 /* SERVICES SECTION */
 
 #services {
+
     padding: 60px 115px;
+    background-color: #f8f9fa;
 }
 
 .service-img {
@@ -104,7 +124,7 @@ body {
 
 .title::before {
     content: '';
-    background:#154ea3;
+    background:black;
     height: 5px;
     width: 200px;
     margin-left: auto;
@@ -132,7 +152,8 @@ body {
     padding: 8px 25px;
     border: none;
     border-radius: 20px;
-    background-image: linear-gradient(to right,  #154ea3,  #ec3c4c);
+    background-color: black;
+    background-image: linear-gradient(to right, #ec3c4b71, #ec3c4c);
 }
 
 #services .h1 {
@@ -169,19 +190,23 @@ body {
 /* TESTIMONIALS SECTION */
 
 #testimonials {
-    margin: 150px 0;
+    padding-top: 100px;
+    background-color: #f8f9fa;
 }
 
 .testimonials {
-    border-left: 4px solid  #154ea3;
-    margin-top: 50px;
+
+    border-left: 5px solid  black;
+    margin-top: 10px;
     margin-bottom: 50px;
+    padding: 10px;
+    display: flex;
 }
 .testimonials img {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin: 0 10px;
+
+    height: 100px;
+    padding: 0 10px;
+    margin: 0 1px;
 }
 
 .user-details {
@@ -207,8 +232,8 @@ body {
 /* FOOTER SECTION */
 
 #footer {
-    background-image: linear-gradient(to right, #154ea3, #ec3c4c);
-    color: #ffffff;
+    background-color: black;
+    color: #f8f9fa;
 }
 
 .footer-box {
@@ -230,7 +255,7 @@ body {
     text-align: center;
     padding-top: 7px;
     border-radius: 2px;
-    background-image: linear-gradient(to right,  #154ea3, #ec3c4c);
+    background-image: linear-gradient(to right, #ec3c4b71, #ec3c4c);
 }
 
 .footer-box .formulario-contato {
@@ -243,11 +268,12 @@ body {
 }
 
 .footer-box .btn-primary {
+
     box-shadow: none !important;
     border: none;
     border-radius: 0; 
     margin-top: 40px;
-    background-image: linear-gradient(to right, #154ea3, #ec3c4c);
+    ;
     text-align: justify;
 }
 
@@ -285,7 +311,8 @@ hr {
     padding: 8px 25px;
     border: none;
     border-radius: 20px;
-    background-image: linear-gradient(to right,#154ea3, #ec3c4c);
+    background-color: black;
+    background-image: linear-gradient(to right, #ec3c4b71, #ec3c4c);
 }
 .social-icons {
 
@@ -303,10 +330,9 @@ hr {
 
 .social-icons a:hover {
 
-  background: #ec3c4c;
+  background: var(--highlight-color);
   padding: 4px;
   border-radius: 50%;
   transition: background 1.0s;
 
 }
-
