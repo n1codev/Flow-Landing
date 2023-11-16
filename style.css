@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
 	
-	font-family: 'Fjalla One', sans-serif;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
+	font-family: 'Inter', sans-serif;
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -24,11 +22,6 @@ span {
 color: var(--green);
 }
 
-h1,
-h3 {
-	font-family: 'Fjalla One', sans-serif;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
-}
 
 *::selection {
 
@@ -52,7 +45,7 @@ html::-webkit-scrollbar {
 
 html::-webkit-scrollbar-track {
 
-	background: #000000;
+	background: #1a1818;
 }
 
 html::-webkit-scrollbar-thumb {
@@ -102,7 +95,7 @@ header {
 	left: 0;
 	z-index: 1000;
 	width: 100%;
-	background-color: black;
+	background-color: #1a1818;
 	padding: 1.5rem 10%;
 	box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
 	display: flex;
@@ -173,13 +166,11 @@ header #menu-bar {
 
 	color: white;
 	font-size: 6rem;
-	font-family: 'Fjalla One', sans-serif;
-	font-family: 'M PLUS Rounded 1c', sans-serif;
 	
 }
 
 .home .content p {
-
+	
 	color: white;
 	font-size: 2rem;
 	margin-top: 10px;
@@ -192,7 +183,7 @@ header #menu-bar {
 
 
 .home .btn {
-	background-color: var(--green);
+	
 	color: #fff;
 	padding: 5px
 }
@@ -207,8 +198,8 @@ header #menu-bar {
 }
 
 .home .btn:hover {
-	background-color: #fff;
-	color: var(--green);
+	background-color: #898994;
+	color: #fff;
 	transform: scale(1.1);
 }
 
@@ -287,8 +278,11 @@ section.about {
 /* ******************************** Menu Section ************************************* */
 section.menu {
 	min-height: 90vh;
+	
 }
-
+ #menu {
+	background-color: #1a1818;
+ }
 .menu .list {
 	display: flex;
 	justify-content: center;
@@ -307,7 +301,7 @@ section.menu {
 .menu .list .btn.active {
 	
 	background-color: var(--green);
-	color: #fff;
+	color: #1a1818;
 	padding: 5px
 }
 .menu .list .btn:hover {
@@ -369,8 +363,12 @@ section.menu {
 /* ******************************** Popular Section ************************************* */
 .popular {
 
-	background: #f4f4f4;
+	background: #1a1818;
 	min-height: 90vh;
+}
+
+.popular h1 {
+	color: white;
 }
 
 .popular .box-container {
@@ -386,14 +384,14 @@ section.menu {
 	margin: 3rem;
 	text-align: center;
 	cursor: pointer;
-			border-radius: 28px;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow:  21px 21px 43px #cccccc, -21px -21px 43px #ffffff;
+	border-radius: 28px;
+    background: #333;
+
 }
 
 .popular .box-container .box:hover {
 	transform: scale(1.1);
-	box-shadow:  21px 21px 43px #cccccc, -21px -21px 43px #ffffff;
+
 }
 
 .popular .box-container .box img {
@@ -404,7 +402,7 @@ section.menu {
 }
 
 .popular .box-container .box h3 {
-	color: #000000;
+	color: white;
 	font-size: 2.2rem;
 	font-weight: normal;
 }
@@ -433,7 +431,7 @@ section.menu {
 /* ******************************** Footer Section ************************************* */
 .footer {
 	
-	background: #000000;
+	background: #333;
 	padding: 0.5rem 1%;
 }
 
@@ -511,7 +509,7 @@ section.menu {
 	top: 0;
 	left: 0;
 	bottom: 0;
-	background-color: #fff;
+	background-color: #525050;
 	display: grid;
 	justify-content: center;
 	align-items: center;
@@ -528,16 +526,13 @@ section.menu {
 
   .formulario {
 	border-radius: 28px;
-    background: linear-gradient(15deg, #000000, #525050);
-    box-shadow:  21px 21px 43px #000000, -21px -21px 43px #000000;
+    background:  #333;
 	}
-
-
 
 	.formulario .formulario-contato  {
 		
 	box-shadow: none !important;
-    background-color: #ffffff0c;
+    background-color: #e2e2e2;;
 	padding: 10px;
     width: 500px;
     text-align:justify;
@@ -548,7 +543,7 @@ section.menu {
 
     box-shadow: none !important;
     border-radius: 10px;
-	background-color: #ffffff0c;
+	background-color: #e2e2e2;
     margin-top: 15px;
 	margin-left: 5px;
 	padding: 10px;
@@ -567,9 +562,13 @@ section.menu {
 
 .servicos-section {
 
-    background-color: #f4f4f4;
+    background-color: #525050;
     padding: 50px 0;
     text-align: center;
+}
+
+.servicos-section h1 {
+	color: white;
 }
 
 .servicos-heading {
@@ -578,17 +577,18 @@ section.menu {
 }
 
 .servico {
+	color: #fff;
     display: inline-block;
-    width: 500px;
+    max-width: 400px;
     padding: 0px;
     margin: 2%;
 	border-radius: 28px;
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow:  21px 21px 43px #cccccc, -21px -21px 43px #ffffff;
+    background:  #333;
+
 }
 
 .container {
-    background-color: #fff;
+    background-color: #525050;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -607,7 +607,7 @@ form {
     display: inline-flex;
     flex-direction: column;
     align-items:baseline;
-		margin: 100px;
+	margin: 100px;
 }
 
 .heading {
@@ -623,7 +623,7 @@ form {
 
 .servico-icon {
 
-	  color: #ec3c4c;
+	color: #898994;
     font-size: 35px;
     margin: 10px
 }
@@ -698,106 +698,50 @@ form {
 		transform: scaleY(1);
 		opacity: 1;
 	}
-
-	.home .content {
-		text-align: center;
-	}
-
-	.home .image {
-		text-align: center;
-	}
-
-	.home .content h3 {
-		font-size: 3.2rem;
-	}
-
-	.menu .row .content {
-		padding: 0 5%;
-	}
-
-
-
-	.formulario-contato{
-		width: 25px;
-		
-		margin-left: -100px;
-	}
-	.mensagem {
-		margin-left: -50px;
-
-		width: 265px
-	}
-
-	html {
-		font-size: 50%;
-	}
-
-	header .navbar {
-		position: fixed;
-		top: 6rem;
-		left: 0;
-		width: 100%;
-		right: 0;
-		bottom: 0;
-	}
-
-	header .navbar ul li {
-		margin: 3.5rem;
-		width: 100%;
-	}
-
-	.home{
-
-		margin: 0.5px;
-	}
-
-	.home .content p {
-		padding: 1rem 0;
-	}
-
-	.home .image img {
-		padding: 100px;
-		width: 100%;
-	}
-
-	.about .image {
-		width: 90%;
-	}
-
-	.about .content p {
-		font-size: 2rem;
-	}
-
-	.servicos-section .servico {
 	
-		flex-direction: column;
-	}
+		.heading {
+			margin-bottom: 50px; /* Reduz a margem inferior do heading */
+			margin-top: 30px; /* Reduz a margem superior do heading */
+		}
+	
+		.servico {
+			width: 90%; /* Ajusta a largura do serviço para 90% */
+			margin: 2% auto; /* Centraliza o serviço */
+		}
+	
+		.container {
+			padding: 10px; /* Reduz o padding do container */
+		}
+	
+		h2 {
+			font-size: 20px; /* Reduz o tamanho da fonte do título */
+			margin-bottom: 15px; /* Reduz a margem inferior do título */
+		}
+	
+		.form {
+			margin: 20px; /* Ajusta a margem do formulário */
+		}
 
-	.servicos-section .servico {
-		width: 80%;
-		text-align: center;
-		margin: 15px;
-	}
+		.formulario-contato {
+			max-width: 330px;
+		}
 
-	.popular .box-container .box {
-		text-align: center;
-	}
+		.mensagem {
+			max-width: 330px;
+		}
 
-	.gallery .box-container .box h3 {
-		font-size: 2rem;
+		.servico-icon {
+			font-size: 25px; /* Reduz o tamanho do ícone do serviço */
+			margin: 5px; /* Reduz a margem do ícone do serviço */
+		}
+	
+		.servico-nome {
+			font-size: 16px; /* Reduz o tamanho do nome do serviço */
+			margin-bottom: 10px; /* Reduz a margem inferior do nome do serviço */
+		}
+	
+		.servico-descricao {
+			font-size: 12px; /* Reduz o tamanho da descrição do serviço */
+			margin: 10px; /* Reduz a margem da descrição do serviço */
+		}
 	}
-
-	.gallery .box-container .box {
-		height: auto;
-		width: 90%;
-	}
-
-	.footer {
-		text-align: center;
-	}
-
-	.footer .box-container .box p,
-	.footer .box-container .box a {
-		font-size: 2rem;
-	}
-}
