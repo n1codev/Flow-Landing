@@ -2,295 +2,369 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-		<script src="./js/jquery.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/app.js"></script>
-		<!-- aos css cdn link -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-			integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<!-- font awesome -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-			integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
-		<!-- css link -->
-		<link rel="stylesheet" href="style.css" />
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MM08BGL3PT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-MM08BGL3PT');
-  </script>
+		<!--=============== FAVICON ===============-->
+		<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+		<!--=============== REMIX ICONS ===============-->
+		<link
+			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+			rel="stylesheet"
+		/>
+
+		<!--=============== CSS ===============-->
+		<link rel="stylesheet" href="css/styles.css" />
+
 		<title>Agência Flow</title>
 	</head>
-
-<!-- START Widget WhastApp hospedagemwordpresspro -->
-<a href="https://api.whatsapp.com/send?phone=5533984550964&text=" class="bt-whatsApp" target="_blank" style="right:25px; position:fixed;width:60px;height:60px;bottom:40px;z-index:100;">
-<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI2MHB4IiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCA2MCA2MCIgd2lkdGg9IjYwcHgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48dGl0bGUvPjxkZWZzLz48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGlkPSJibGFjayIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiPjxnIGlkPSJ3aGF0c2FwcCI+PHBhdGggZD0iTTMwLDYwIEM0Ni41Njg1NDMzLDYwIDYwLDQ2LjU2ODU0MzMgNjAsMzAgQzYwLDEzLjQzMTQ1NjcgNDYuNTY4NTQzMywwIDMwLDAgQzEzLjQzMTQ1NjcsMCAwLDEzLjQzMTQ1NjcgMCwzMCBDMCw0Ni41Njg1NDMzIDEzLjQzMTQ1NjcsNjAgMzAsNjAgWiIgZmlsbD0iIzAwMDAwMCIvPjxwYXRoIGQ9Ik0zMC4wNzEyNjE1LDQ2LjIyMTA0NjIgQzI3LjIxMDgzMDgsNDYuMjIxMDQ2MiAyNC41MjM1NjkyLDQ1LjQ4OTk2OTIgMjIuMTg1Niw0NC4yMDY4OTIzIEwxMy4xNTM4NDYyLDQ3LjA3NjkyMzEgTDE2LjA5ODA5MjMsMzguMzkxODc2OSBDMTQuNjEzMDQ2MiwzNS45NTIzNjkyIDEzLjc1NzUzODUsMzMuMDkxNTY5MiAxMy43NTc1Mzg1LDMwLjAzMzYgQzEzLjc1NzUzODUsMjEuMDkzNDE1NCAyMS4wNjEyOTIzLDEzLjg0NjE1MzggMzAuMDcxNjMwOCwxMy44NDYxNTM4IEMzOS4wODA4NjE1LDEzLjg0NjE1MzggNDYuMzg0NjE1NCwyMS4wOTM0MTU0IDQ2LjM4NDYxNTQsMzAuMDMzNiBDNDYuMzg0NjE1NCwzOC45NzM3ODQ2IDM5LjA4MTIzMDgsNDYuMjIxMDQ2MiAzMC4wNzEyNjE1LDQ2LjIyMTA0NjIgWiBNMzAuMDcxMjYxNSwxNi40MjQxMjMxIEMyMi41MDc5Mzg1LDE2LjQyNDEyMzEgMTYuMzU1ODE1NCwyMi41MjkzNTM4IDE2LjM1NTgxNTQsMzAuMDMzNiBDMTYuMzU1ODE1NCwzMy4wMTE0NDYyIDE3LjMyNjUyMzEsMzUuNzY5MjMwOCAxOC45NjgxMjMxLDM4LjAxMzA0NjIgTDE3LjI1NDg5MjMsNDMuMDY3MDc2OSBMMjIuNTI1MjkyMyw0MS4zOTE4NzY5IEMyNC42OTEyLDQyLjgxMzc4NDYgMjcuMjg1NDE1NCw0My42NDMwNzY5IDMwLjA3MTI2MTUsNDMuNjQzMDc2OSBDMzcuNjMzNDc2OSw0My42NDMwNzY5IDQzLjc4NjcwNzcsMzcuNTM4MjE1NCA0My43ODY3MDc3LDMwLjAzMzk2OTIgQzQzLjc4NjcwNzcsMjIuNTI5NzIzMSAzNy42MzM0NzY5LDE2LjQyNDEyMzEgMzAuMDcxMjYxNSwxNi40MjQxMjMxIEwzMC4wNzEyNjE1LDE2LjQyNDEyMzEgWiBNMzguMzA4OCwzMy43NjE3MjMxIEMzOC4yMDgzNjkyLDMzLjU5NjY3NjkgMzcuOTQxNzg0NiwzMy40OTY5ODQ2IDM3LjU0MjY0NjIsMzMuMjk4NzA3NyBDMzcuMTQyNCwzMy4xMDA0MzA4IDM1LjE3NTg3NjksMzIuMTQwMDYxNSAzNC44MDk5NjkyLDMyLjAwODI0NjIgQzM0LjQ0Mjk1MzgsMzEuODc2MDYxNSAzNC4xNzYsMzEuODA5MjMwOCAzMy45MDk3ODQ2LDMyLjIwNjUyMzEgQzMzLjY0MzU2OTIsMzIuNjAzODE1NCAzMi44NzcwNDYyLDMzLjQ5Njk4NDYgMzIuNjQzMzIzMSwzMy43NjE3MjMxIEMzMi40MDk5NjkyLDM0LjAyNjgzMDggMzIuMTc2OTg0NiwzNC4wNjAwNjE1IDMxLjc3NzEwNzcsMzMuODYxNDE1NCBDMzEuMzc3NiwzMy42NjMxMzg1IDMwLjA4ODk4NDYsMzMuMjQ0MDYxNSAyOC41NjExMDc3LDMxLjg5MjMwNzcgQzI3LjM3MjU1MzgsMzAuODQwNzM4NSAyNi41Njk4NDYyLDI5LjU0MjUyMzEgMjYuMzM2ODYxNSwyOS4xNDQ4NjE1IEMyNi4xMDM1MDc3LDI4Ljc0NzkzODUgMjYuMzEyMTIzMSwyOC41MzM0MTU0IDI2LjUxMjI0NjIsMjguMzM1ODc2OSBDMjYuNjkyMDYxNSwyOC4xNTc5MDc3IDI2LjkxMjEyMzEsMjcuODcyNDkyMyAyNy4xMTIyNDYyLDI3LjY0MDk4NDYgQzI3LjMxMjM2OTIsMjcuNDA5MTA3NyAyNy4zNzg4MzA4LDI3LjI0NDA2MTUgMjcuNTExNzUzOCwyNi45Nzg5NTM4IEMyNy42NDU0MTU0LDI2LjcxNDIxNTQgMjcuNTc4NTg0NiwyNi40ODI3MDc3IDI3LjQ3ODUyMzEsMjYuMjgzNjkyMyBDMjcuMzc4NDYxNSwyNi4wODU0MTU0IDI2LjU3ODMzODUsMjQuMTMyOTIzMSAyNi4yNDUyOTIzLDIzLjMzODMzODUgQzI1LjkxMjI0NjIsMjIuNTQ0NDkyMyAyNS41Nzk1NjkyLDIyLjY3NjY3NjkgMjUuMzQ1ODQ2MiwyMi42NzY2NzY5IEMyNS4xMTI0OTIzLDIyLjY3NjY3NjkgMjQuODQ1OTA3NywyMi42NDM0NDYyIDI0LjU3OTMyMzEsMjIuNjQzNDQ2MiBDMjQuMzEyNzM4NSwyMi42NDM0NDYyIDIzLjg3OTI2MTUsMjIuNzQyNzY5MiAyMy41MTI2MTU0LDIzLjEzOTY5MjMgQzIzLjE0NjMzODUsMjMuNTM2OTg0NiAyMi4xMTM2LDI0LjQ5Njk4NDYgMjIuMTEzNiwyNi40NDkxMDc3IEMyMi4xMTM2LDI4LjQwMTYgMjMuNTQ1ODQ2MiwzMC4yODggMjMuNzQ2MzM4NSwzMC41NTIzNjkyIEMyMy45NDYwOTIzLDMwLjgxNjczODUgMjYuNTExODc2OSwzNC45NTM2IDMwLjU3NjczODUsMzYuNTQyNCBDMzQuNjQzMDc2OSwzOC4xMzA4MzA4IDM0LjY0MzA3NjksMzcuNjAwOTg0NiAzNS4zNzYzNjkyLDM3LjUzNDg5MjMgQzM2LjEwODU1MzgsMzcuNDY4OCAzNy43NDEyOTIzLDM2LjU3NTI2MTUgMzguMDc1NDQ2MiwzNS42NDg4NjE1IEMzOC40MDgxMjMxLDM0LjcyMTcyMzEgMzguNDA4MTIzMSwzMy45MjcxMzg1IDM4LjMwODgsMzMuNzYxNzIzMSBMMzguMzA4OCwzMy43NjE3MjMxIFoiIGZpbGw9IiNGRkZGRkYiLz48L2c+PC9nPjwvc3ZnPg==" alt="" width="60px">
-</a>
-<span id="alertWapp" style="right:30px; visibility: hidden; position:fixed;	width:17px;	height:17px;bottom:90px; background:#333;z-index:101; font-size:11px;color:#fff;text-align:center;border-radius: 50px; font-weight:bold;line-height: normal; "> 1 </span>
-<div id="msg1" style="right: 90px; visibility: visible; background: #333; color: #fff; position: fixed; width: 200px; bottom: 52px; text-align: center; font-size: 13px; line-height: 31px; height: 32px; border-radius: 100px; z-index: 100; ">Fale conosco via Whatsapp</div>
-<script type="text/javascript">function showIt2() {document.getElementById("msg1").style.visibility = "visible";}    setTimeout("showIt2()", 5000); function hiddenIt() {document.getElementById("msg1").style.visibility = "hidden";}setTimeout("hiddenIt()", 15000); function showIt3() {document.getElementById("msg1").style.visibility = "visible";} setTimeout("showIt3()", 25000);  msg1.onclick = function() {document.getElementById('msg1').style.visibility = "hidden"; };function alertW() { document.getElementById("alertWapp").style.visibility = "visible";	} setTimeout("alertW()", 15000); </script>
-<!-- END Widget WhastApp -->
-
-
 	<body>
-		<!-- *************************** Header Section Starts ***************************** -->
-		<header>
-			<a href="#home" class="logo"> <img src="img/logo 4.png" alt="" /> </a>
-			<!-- bars icon -->
-			<div id="menu-bar" class="fas fa-bars"></div>
-			<!-- navbar -->
-			<nav class="navbar">
-				<ul>
-					<li><a class="active" href="#home">Início</a></li>
-					<li><a href="#about">Sobre</a></li>
-					<li><a href="#menu">Serviços</a></li>
-					<li><a href="#popular">Clientes</a></li>
-					<li><a href="#contato">Info</a></li>
-				</ul>
+		<!--==================== HEADER ====================-->
+		<header class="header" id="header">
+			<nav class="nav container">
+				<a href="#home" class="nav__logo">
+					<img id="theme-image" src="./img/logo 3.png" alt="navlogo">
+				</a>
+
+				<div class="nav__menu" id="nav-menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#home" class="nav__link active-link">Início</a>
+						</li>
+						<li class="nav__item">
+							<a href="#about" class="nav__link">Sobre</a>
+						</li>
+						<li class="nav__item">
+							<a href="#faqs" class="nav__link">Serviços</a>
+						</li>
+						<li class="nav__item">
+							<a href="#contact" class="nav__link">Contato</a>
+						</li>
+					</ul>
+
+					<div class="nav__close" id="nav-close">
+						<i class="ri-close-line"></i>
+					</div>
+				</div>
+
+				<div class="nav__btns">
+					<!-- Theme change button -->
+					<i class="ri-moon-line change-theme" id="theme-button" onclick="toggleMode( )"></i>
+
+					<div class="nav__toggle" id="nav-toggle">
+						<i class="ri-menu-line"></i>
+					</div>
+				</div>
 			</nav>
 		</header>
-		<!-- *************************** Header Section Ends ***************************** -->
 
-		<!-- *************************** Home Section Starts ***************************** -->
-		<section class="home" id="home">
-			<!-- content -->
-			<div class="content" data-aos="fade-right">
-				<h3><span>Marketing 360°</span>, focados em gerar <span>flow</span>.</h3>
-				<p>Está pronto para alavancar seu negócio com nossas soluções?</p>
-				<div class="botões">
-				    <a href="#about">
-					<button class="btn">Saiba mais ou <ion-icon name="arrow-forward-outline"></ion-icon></button>
+		<main class="main">
+			<!--==================== HOME ====================-->
+			<section class="home" id="home">
+				<div class="home__container container grid">
+					<div class="home__data">
+						<h1 class="home__title">
+							Marketing 360° <br />
+							focados em gerar flow.
+						</h1>
+						<p class="home__description">
+							
+						</p>
+						<a href="#about" class="button button--flex">
+							Saiba mais <i class="ri-arrow-right-down-line button__icon"></i>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== ABOUT ====================-->
+			<section  class="about section container" id="about">
+				<div class="about__container grid">
+					<img src="img/logo 4.png" alt="" class="about__img" />
+
+					<div class="about__data">
+						<h2 class="section__title about__title">
+							O que é Flow?
+						</h2>
+
+						<p class="about__description">
+							<Span><strong>Flow</strong></Span> é o estado mental que uma pessoa alcança quando está <strong>totalmente concentrada</strong> no que está fazendo, imersa em um <strong>sentimento de prazer</strong> e envolvimento pleno, sem que perceba o tempo passar.
+						</p>
+
+						<div class="about__details">
+							<p class="about__details-description">
+								<P>Entenda mais sobre nossos serviços clicando no botão abaixo.</P>
+							</p>
+							<a href="#faqs" class="button button--flex">
+								Saiba mais <i class="ri-arrow-right-down-line button__icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== STEPS ====================-->
+			<section id="#steps" class="steps section container">
+				<div class="steps__bg">
+					<h1 class="section__title-center steps__title">
+						Por que <br />
+						escolher a Flow?
+					</h1>
+
+					<div class="steps__container grid">
+						<div class="steps__card">
+							<div class="steps__card-number">01</div>
+							<h3 class="steps__card-title">Business Intelligence</h3>
+							<p class="steps__card-description">
+								Decisões inteligentes utilizando informações internas e externas de maneira estratégica.
+							</p>
+						</div>
+
+						<div class="steps__card">
+							<div class="steps__card-number">02</div>
+							<h3 class="steps__card-title">Neurociências</h3>
+							<p class="steps__card-description">
+								Entendimento do comportamento do consumidor e as influências em seu processo de tomada de decisões.
+							</p>
+						</div>
+
+						<div class="steps__card">
+							<div class="steps__card-number">03</div>
+							<h3 class="steps__card-title">Mindset Ágil</h3>
+							<p class="steps__card-description">
+								Uma nova forma de pensar e agir. Adaptação e flexibilidade com foco em gerar valor ao negócio e às pessoas.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== QUESTIONS ====================-->
+			<section class="questions section" id="faqs">
+				<h2 class="section__title-center questions__title container">
+					Nossos serviços 
+				</h2>
+				<div class="questions__container container grid">
+					<div class="questions__group">
+						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">
+									Gestão de redes sociais
+								</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Criamos conteúdos, gerenciamos suas principais redes sociais e produzimos legendas envolventes para seu público.
+								</p>
+							</div>
+						</div>
+
+						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">
+									Gestão de tráfego
+								</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Criamos e gerenciamos anúncios nas principais plataformas, garantindo um desempenho adequado para cada veiculação.
+								</p>
+							</div>
+						</div>
+
+						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">
+									Identidade visual
+								</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Criamos sua marca do absoluto zero após um estudo aptofundado do seu negócio, produzindo uma marca adequada para a sua empresa.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="questions__group">
+						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">Produção Audiovisual</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Do roteiro até as últimas etapas da veiculação, nós produzimos vídeos, comerciais, depoimentos e muito mais para seu negócio.
+								</p>
+							</div>
+						</div>
+
+						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">Sites, Blogs, E-commerce</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Auxiliamos você na sua jornada digital com a construção de páginas da web adequadas para seu negócio.
+								</p>
+							</div>
+						</div>
+
+						<div class="questions__item">
+							<header class="questions__header">
+								<i class="ri-add-line questions__icon"></i>
+								<h3 class="questions__item-title">
+									Consultorias e treinamento
+								</h3>
+							</header>
+
+							<div class="questions__content">
+								<p class="questions__description">
+									Auxiliamos você e sua equipe a alcaçarem objetivos importantes no mundo dos negócios. Consultoria gráfica, contábil, jurídica, entre outros.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--==================== CONTACT ====================-->
+			<section class="contact section container" id="contact">
+				<div class="contact__container grid">
+					<div class="contact__box">
+						<h2 class="section__title">
+							Entre em contato  <br />
+							conosco
+						</h2>
+
+						<div class="contact__data">
+							<div class="contact__information">
+								<h3 class="contact__subtitle">WhastApp</h3>
+								<span class="contact__description">
+									<i class="ri-phone-line contact__icon"></i>
+									<a href="https://api.whatsapp.com/send/?phone=5533984550964&text&type=phone_number&app_absent=0" target="_blank">(33) 9 8455-0964</a>
+									
+								</span>
+							</div>
+
+							<div class="contact__information">
+								<h3 class="contact__subtitle">E-mail</h3>
+								<span class="contact__description">
+									<i class="ri-mail-line contact__icon"></i>
+									agenciaflow@email.com
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<form action="" class="contact__form">
+						<div class="contact__inputs">
+							<div class="contact__content">
+								<input type="email" placeholder=" " class="contact__input" />
+								<label for="" class="contact__label">Email</label>
+							</div>
+
+							<div class="contact__content">
+								<input type="text" placeholder=" " class="contact__input" />
+								<label for="" class="contact__label">Nome</label>
+							</div>
+							<div class="contact__content">
+								<input type="text" placeholder=" " class="contact__input" />
+								<label for="" class="contact__label">Telefone</label>
+							</div>
+
+							<div class="contact__content contact__area">
+								<textarea
+									name="message"
+									placeholder=" "
+									class="contact__input"
+								></textarea>
+								<label for="" class="contact__label">Mensagem</label>
+							</div>
+						</div>
+
+						<button class="button button--flex">
+							Enviar
+							<i class="ri-arrow-right-up-line button__icon"></i>
+						</button>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<!--==================== FOOTER ====================-->
+		<footer class="footer section">
+			<div class="footer__container container grid">
+				<div class="footer__content">
+					<a href="#home" class="footer__logo">
+						<img id="theme-image" src="/Flow/img/logo 3.png" alt="flowfooter">
 					</a>
-					<a href="https://api.whatsapp.com/send/?phone=5533984550964&text&type=phone_number&app_absent=0" target="_blank">
-					<button id="message" class="btn">Entre em contato conosco <ion-icon class="logo" name="logo-whatsapp"> <i class="fa-solid fa-message"></i> </ion-icon></button>
-					</a>
-					</div>
-				</div>
-				<img class="homeimage" src="./img/home.jpg" alt="home" data-aos="fade-right">
-			</div>
-		</section>
-		<section class="about" id="about">
-			<div class="content" data-aos="fade-right">
-				<h3>O que é <span>Flow</span>?</h3>
-				<p>
-					<Span><strong>Flow</strong></Span> é o estado mental que uma pessoa alcança quando está <strong>totalmente concentrada</strong> no que está fazendo, imersa em um <strong>sentimento de prazer</strong> e envolvimento pleno, sem que perceba o tempo passar.
-				</p>
-				<P>Entenda mais sobre nossos serviços ou nos envie uma mensagem no formulário abaixo. Ficaremos satisfeitos em sanar todas as suas dúvidas!</P>
-				<a href="#menu">
-					<button class="btn">Conheça nossos serviços</button>
-				</a>
-			</div>
-			<img class="aboutimage" src="./img/about.jpg" alt="" data-aos="fade-left">
-		</section>
-		<!-- *************************** Menu Section Starts ***************************** -->
- <section id="menu" class="servicos-section">
-	    <div data-aos="fade-left">
-        <h1 class="heading" data-aos="fade-left">Nossos <span>serviços</span></h1>
-        <div class="servico">
-			<dl>
-            <div class="servico-icon"><ion-icon name="chevron-down-circle"></ion-icon></div>
-            <div class="servico-nome">Gestão de redes sociais</div>
-            <div class="servico-descricao">Criamos conteúdos, gerenciamos suas principais redes sociais e produzimos legendas envolventes para seu público.</div>
-        </div>
-        <div class="servico">
-            <div class="servico-icon"><ion-icon name="chevron-down-circle"></ion-icon></div>
-            <div class="servico-nome">Gestão de Tráfego</div>
-            <div class="servico-descricao">Criamos e gerenciamos anúncios nas principais plataformas, garantindo um desempenho adequado para cada veiculação.
-</div>
-        </div>
-				<div class="servico">
-            <div class="servico-icon"><ion-icon name="chevron-down-circle"></ion-icon></div>
-            <div class="servico-nome">Identidade Visual</div>
-            <div class="servico-descricao">Criamos sua marca do absoluto zero após um estudo aptofundado do seu negócio, produzindo uma marca adequada para a sua empresa.</div>
-        </div>
-        <div class="servico">
-            <div class="servico-icon"><ion-icon name="chevron-down-circle"></ion-icon></div>
-            <div class="servico-nome">Produção Audiovisual</div>
-            <div class="servico-descricao">Do roteiro até as últimas etapas da veiculação, nós produzimos vídeos, comerciais, depoimentos e muito mais para seu negócio.</div>
-        </div>
-        <div class="servico">
-            <div class="servico-icon"><ion-icon name="chevron-down-circle"></ion-icon></div>
-            <div class="servico-nome">Sites, Blogs, E-commerce</div>
-            <div class="servico-descricao">Auxiliamos você na sua jornada digital com a construção de páginas da web adequadas para seu negócio.
-</div>
-        </div>
-				<div class="servico">
-            <div class="servico-icon"><ion-icon name="chevron-down-circle"></ion-icon></div>
-            <div class="servico-nome">Consultorias e treinamento</div>
-            <div class="servico-descricao">Auxiliamos você e sua equipe a alcaçarem objetivos importantes no mundo dos negócios. Consultoria gráfica, contábil, jurídica, entre outros.</div>
-		</dl>
-		</div>
-				
-		
-    </section>
-	<section id="forms">			     
-		<div class="formulario" data-aos="fade-up">
-		<form class="form" action="https://formsubmit.co/nicodberbert@hotmail.com" method="POST" autocomplete="off" netlify>
-		  <h3 class="enviar"> <b>Mande sua mensagem:</b></h3>
-						<label for="">
-		  <input type="text" name="name" class="formulario-contato" placeholder=" Seu nome*" required>
-		  <input type="email" name="email" class="formulario-contato" placeholder=" E-mail*" required>
-						</label>
-						<label for="">
-		  <input type="telefone" name="phone" class="formulario-contato" placeholder=" Telefone para contato*" required>
-		  <input type="cidade" name="city" class="formulario-contato" placeholder=" Cidade*" required>
-						</label>
-						<label>
-		  <select type="estado" name="estate" class="formulario-contato">
-			<option> Selecione um estado*</option>
-			<option value="AC">Acre</option>
-			<option value="AL">Alagoas</option>
-			<option value="AP">Amapá</option>
-			<option value="AM">Amazonas</option>
-			<option value="BA">Bahia</option>
-			<option value="CE">Ceará</option>
-			<option value="DF">Distrito Federal</option>
-			<option value="ES">Espirito Santo</option>
-			<option value="GO">Goiás</option>
-			<option value="MA">Maranhão</option>
-			<option value="MS">Mato Grosso do Sul</option>
-			<option value="MT">Mato Grosso</option>
-			<option value="MG">Minas Gerais</option>
-			<option value="PA">Pará</option>
-			<option value="PB">Paraíba</option>
-			<option value="PR">Paraná</option>
-			<option value="PE">Pernambuco</option>
-			<option value="PI">Piauí</option>
-			<option value="RJ">Rio de Janeiro</option>
-			<option value="RN">Rio Grande do Norte</option>
-			<option value="RS">Rio Grande do Sul</option>
-			<option value="RO">Rondônia</option>
-			<option value="RR">Roraima</option>
-			<option value="SC">Santa Catarina</option>
-			<option value="SP">São Paulo</option>
-			<option value="SE">Sergipe</option>
-			<option value="TO">Tocantins</option>
-			</label>
-		  </select>
-		<div>
-		<label>
-		  <textarea class="mensagem" name="message" style="resize: none;" placeholder=" Conte como podemos lhe ajudar*" required></textarea>
-		</label>
-		</div>
-		  <button type="submit" class="btn btn-primary">Enviar</button>
-		  <input type="hidden" name="_subject" value="Novo contato!">
-		  <input type="text" name="_honey" style="display: none;">
-		  <input type="hidden" name="_captcha" value="false">
-		</form>
-	  </div></section>
-		<!-- *************************** Popular Section Starts ***************************** -->
 
-		<section class="popular" id="popular">
-			<h1 class="heading" data-aos="fade-right">Nossos <span>clientes</span></h1>
-			<div class="box-container">
-				<!-- box 1 -->
-				<div class="box" data-aos="fade-right">
-					<img src="img/autotintas.jpg" alt="" />
-					<h3>Auto Tintas Manhuaçu</h3>
-					<div class="starts">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
+					<h3 class="footer__title">
+						Inscreva-se em nosso <br />
+						newsletter para novidades
+					</h3>
+
+					<div class="footer__subscribe">
+						<input
+							type="email"
+							placeholder="Seu e-mail"
+							class="footer__input"
+						/>
+
+						<button class="button button--flex footer__button">
+							Inscerver
+							<i class="ri-arrow-right-up-line button__icon"></i>
+						</button>
 					</div>
 				</div>
 
-				<!-- box 2 -->
-				<div class="box" data-aos="fade-right">
-					<img src="img/iunapneus.png" alt="" />
-					<h3>Iúna Pneus</h3>
-					<div class="starts">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
+				<div class="footer__content">
+					<h3 class="footer__title">Nosso endereço</h3>
+
+					<ul class="footer__data">
+						<li class="footer__information">Rua Antonio Wellerson</li>
+						<li class="footer__information">54, sala 101, Centro</li>
+						<li class="footer__information"> Manhuaçu - MG.</li>
+					</ul>
 				</div>
 
-				<!-- box 3 -->
-				<div class="box" data-aos="fade-right">
-					<img src="img/penafarma.png" alt="" />
-					<h3>Pena Farma</h3>
-					<div class="starts">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-					</div>
-				</div>
-				</div>
+				<div class="footer__content">
+					<h3 class="footer__title">Contato</h3>
+
+					<ul class="footer__data">
+						<li class="footer__information">(33) 9 8455-0964</li>
+
+						<div class="footer__social">
+							<a href="https://www.facebook.com/" class="footer__social-link">
+								<i class="ri-facebook-fill"></i>
+							</a>
+							<a href="https://www.instagram.com/" class="footer__social-link">
+								<i class="ri-instagram-line"></i>
+							</a>
+							<a href="https://twitter.com/" class="footer__social-link">
+								<i class="ri-twitter-fill"></i>
+							</a>
+						</div>
+					</ul>
 			</div>
-		</section>
+			
+		</footer>
+		<h1 class="credit"> © 2023 Agência Flow. Todos os direitos reservados. Desenvolvido por <a href="https://nicolinks.netlify.app" target="_blank"> Nícolas Berbert</a></h1>
 
-		<!-- *************************** Footer Section Starts ***************************** -->
-		<div id="contato" class="footer">
-			<div class="box-container">
-				<!-- box 1 -->
-				<div class="box">
-					<h3>Informações</h3>
-					<p><i class="fas fa-map-marker-alt"></i>Antonio Wellerson, 54, sala 101, Centro, Manhuaçu - MG</p>
-					<p><i class="fas fa-envelope"></i> test@gmail.com</p>
-					<p><i class="fas fa-phone"></i> +55 33 98455-0964</p>
-				</div>
+		<!--=============== SCROLL REVEAL ===============-->
+		<script src="js/scrollreveal.min.js"></script>
 
-				<div class="box">
-					<h3>Siga nossas redes</h3>
-					<a href="https://www.instagram.com/flow_agenciamkt/?img_index=2"> <i class="fab fa-instagram"></i> Instagram</a>
-				</div>
-	
-			</div>
-			<h1 class="credit"> © 2023 Agência Flow. Todos os direitos reservados. Desenvolvido por<a href="https://nicolinks.netlify.app" target="_blank"> Nícolas Berbert</a></h1>
-		</div>
-
-		<!-- aos js cdn link -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-			integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-
-		<!-- jquery -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-			integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		></script>
-
-		<!-- js -->
-		<script src="app.js"></script>
-		<script src="smooth-scroll.js"></script>
-    <script>
-      var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-
-		<!-- initializing aos -->
-		<script>
-			AOS.init({
-				delay: 400,
-				duration: 1000,
-			});
-		</script>
+		<!--=============== MAIN JS ===============-->
+		<script src="js/main.js"></script>
 	</body>
 </html>
