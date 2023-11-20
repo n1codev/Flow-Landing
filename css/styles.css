@@ -850,9 +850,10 @@ footer {
 	.home{
 
 			background-image: url('/Flow-Landing/img/background.png');
-			background-size: 400px;
+			background-size: 300px;
 			background-repeat: no-repeat;
 			background-position:right bottom;
+		        margin-top: 50px;
 
 	}
 	.home__title {
