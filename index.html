@@ -360,7 +360,54 @@
 			
 		</footer>
 		<h1 class="credit"> © 2023 Agência Flow. Todos os direitos reservados. Desenvolvido por <a href="https://nicolinks.netlify.app" target="_blank"> Nícolas Berbert</a></h1>
+		<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-analytics.js";
 
+    // Firebase config
+    const firebaseConfig = {
+        // Configuração do seu projeto Firebase
+    };
+
+    // Inicialização do Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // Referências aos campos do formulário
+    const form = document.querySelector('.contact__form');
+    const emailField = document.querySelector('.contact__inputs input[type="email"]');
+    const nameField = document.querySelector('.contact__inputs input[type="text"]');
+    const phoneField = document.querySelectorAll('.contact__inputs input[type="text"]')[1];
+    const messageField = document.querySelector('.contact__inputs textarea');
+
+    // Evento de envio do formulário
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        // Dados do formulário
+        const formData = {
+            email: emailField.value,
+            nome: nameField.value,
+            telefone: phoneField.value,
+            mensagem: messageField.value
+        };
+
+        // Adicionar dados ao Firestore
+        const db = app.firestore(); // Obtenha a referência ao Firestore
+        db.collection('contatos').add(formData)
+            .then((docRef) => {
+                console.log('Dados adicionados com ID:', docRef.id);
+                // Limpar campos do formulário após o envio
+                emailField.value = '';
+                nameField.value = '';
+                phoneField.value = '';
+                messageField.value = '';
+            })
+            .catch((error) => {
+                console.error('Erro ao adicionar dados:', error);
+            });
+    });
+</script>
 		<!--=============== SCROLL REVEAL ===============-->
 		<script src="js/scrollreveal.min.js"></script>
 
